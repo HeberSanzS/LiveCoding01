@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palabras</title>
+</head>
+<body>
+    <h1>Lista de palabras</h1>
+    <ul>
+        <!-- imprime los elementos de la lista  -->
+        <script>
+        function obtenerStringsMayores(string, array) {
+  const resultado = array.filter(str => str.length > string.length);
+  return resultado;
+}
+
+function imprimirStringsMayores(string, array) {
+  const strMayor = obtenerStrMayor(string, array);
+  const contResult = document.createElement("ul");
+
+  strMayor.forEach(str => {
+    const resList = document.createElement("li");
+    resList.textContent = str;
+    contResult.appendChild(resList);
+  });
+
+  document.body.appendChild(contResult);
+}
+
+
+const array = ["hola", "esto", "es", "un", "ejemplo"];
+console.log(contResult);
+        
+        </script>
+        <button onclick="alert('Prueba')"> Click </button>
+  
+    </ul>
+
+</body>
+</html>
